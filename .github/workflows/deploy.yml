@@ -17,6 +17,6 @@ jobs:
         run: npm install -g @railway/cli
 
       - name: Deploy to Railway (Docker)
-        run: railway up --service=e6cd4b78-e7b9-4f6d-8423-67a1dc83895e
+        run: railway up --service=3453c304-3637-4616-97a1-6baa352da395
         env:
-          RAILWAY_TOKEN: e9aade79-ffcd-48dd-b615-bd186f061a68
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
